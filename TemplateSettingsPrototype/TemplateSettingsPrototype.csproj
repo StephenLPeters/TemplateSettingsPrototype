@@ -131,7 +131,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AreaExamples.cs" />
-    <Compile Include="TemplateSettingsPrototypeBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

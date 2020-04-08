@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TemplateSettingsPrototype.Converters
 {
-    class RectangleDimensionsDoubledToRadiusOfCircleWithEqualAreaConverter<T> : PrototypeConverterBase<T> where T : Enum
+    class RectangleDimensionsDoubledToRadiusOfCircleWithEqualAreaConverter : PrototypeConverterBase
     {
         public override object Convert(object value, Type targetType, object parameter, String language)
         {

@@ -15,11 +15,11 @@
                         <ScrollViewer>
                             <Grid>
                                 <Grid.Resources>
-                                    <converters:MultiplyByTwoConverter x:TypeArguments="local:AreaExamplesTemplateSettingsPropertyNames" x:Key="multiplyByTwoConverter" />
-                                    <converters:RectangleDimensionsToRadiusOfCircleWithEqualAreaConverter x:TypeArguments="local:AreaExamplesTemplateSettingsPropertyNames" x:Key="RadiusConverter"/>
-                                    <converters:RectangleDimensionsToDiameterOfCircleWithEqualAreaConverter x:TypeArguments="local:AreaExamplesTemplateSettingsPropertyNames" x:Key="DiameterConverter"/>
-                                    <converters:RectangleDimensionsDoubledToRadiusOfCircleWithEqualAreaConverter x:TypeArguments="local:AreaExamplesTemplateSettingsPropertyNames" x:Key="DoubledRadiusConverter"/>
-                                    <converters:RectangleDimensionsDoubledToDiameterOfCircleWithEqualAreaConverter x:TypeArguments="local:AreaExamplesTemplateSettingsPropertyNames" x:Key="DoubledDiameterConverter"/>
+                                    <converters:MultiplyByTwoConverter x:Key="multiplyByTwoConverter" />
+                                    <converters:RectangleDimensionsToRadiusOfCircleWithEqualAreaConverter x:Key="RadiusConverter"/>
+                                    <converters:RectangleDimensionsToDiameterOfCircleWithEqualAreaConverter  x:Key="DiameterConverter"/>
+                                    <converters:RectangleDimensionsDoubledToRadiusOfCircleWithEqualAreaConverter  x:Key="DoubledRadiusConverter"/>
+                                    <converters:RectangleDimensionsDoubledToDiameterOfCircleWithEqualAreaConverter  x:Key="DoubledDiameterConverter"/>
                                 </Grid.Resources>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*"/>

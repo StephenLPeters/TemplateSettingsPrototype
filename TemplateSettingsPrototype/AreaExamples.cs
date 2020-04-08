@@ -20,11 +20,6 @@ namespace TemplateSettingsPrototype
         public AreaExamples()
         {
             this.DefaultStyleKey = typeof(AreaExamples);
-            this.Resources.Add("multiplyByTwoConverter", new MultiplyByTwoConverter<AreaExamplesTemplateSettingsPropertyNames>());
-            this.Resources.Add("RadiusConverter", new RectangleDimensionsToRadiusOfCircleWithEqualAreaConverter<AreaExamplesTemplateSettingsPropertyNames>());
-            this.Resources.Add("DiameterConverter", new RectangleDimensionsToDiameterOfCircleWithEqualAreaConverter<AreaExamplesTemplateSettingsPropertyNames>());
-            this.Resources.Add("DoubledRadiusConverter", new RectangleDimensionsDoubledToRadiusOfCircleWithEqualAreaConverter<AreaExamplesTemplateSettingsPropertyNames>());
-            this.Resources.Add("DoubledDiameterConverter", new RectangleDimensionsDoubledToDiameterOfCircleWithEqualAreaConverter<AreaExamplesTemplateSettingsPropertyNames>());
         }
 
         public AreaExamplesTemplateSettings AreaExamplesTemplateSettings { get; } = new AreaExamplesTemplateSettings();
@@ -63,9 +58,9 @@ namespace TemplateSettingsPrototype
 
         private void UpdateTemplateSettings()
         {
-            object[] properties = new object[Enum.GetNames(typeof(AreaExamplesTemplateSettingsPropertyNames)).Length];
-            properties[(int)AreaExamplesTemplateSettingsPropertyNames.ExampleHeight] = this.ExampleHeight;
-            properties[(int)AreaExamplesTemplateSettingsPropertyNames.ExampleWidth] = this.ExampleWidth;
+            object[] properties = new object[Enum.GetNames(typeof(AreaExamplesTemplateSettings.AreaExamplesTemplateSettingsPropertyNames)).Length];
+            properties[(int)AreaExamplesTemplateSettings.AreaExamplesTemplateSettingsPropertyNames.ExampleHeight] = this.ExampleHeight;
+            properties[(int)AreaExamplesTemplateSettings.AreaExamplesTemplateSettingsPropertyNames.ExampleWidth] = this.ExampleWidth;
             this.AreaExamplesTemplateSettings.MyProperties = properties;
         }
     }
